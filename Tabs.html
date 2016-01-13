@@ -1,0 +1,83 @@
+<div class="component-tabs">
+  <ul class="nav-tabs">
+    <li ><a href="#1">Tab 1</a></li>
+    <li class="active"><a href="#1">Tab 2</a></li>
+    <li><a href="#1">Tab 3</a></li>
+  </ul>
+  <div class="panel-body">
+    <div class="tab-pane " id="1">
+      <div class="row">
+        Lorem ipsum Lorem ipsum Lorem ipsum
+        Lorem ipsum Lorem ipsum Lorem ipsum
+      </div>
+    </div>
+    <div class="panel-tab active" id="2">
+      <div class="row">
+        Lorem ipsum Lorem ipsum Lorem ipsum
+        Lorem ipsum Lorem ipsums Lorem ipsum
+      </div>
+    </div>
+    <div class="panel-tab" id="3">
+      <div class="row">
+        Lorem ipsum Lorem ipsum Lorem ipsum
+        Lorem ipsum Lorem ipsum Lorem ipsum
+      </div>
+    </div> 
+  </div>
+</div> 
+
+<style>
+.hide {
+  display:none;
+}
+.nav-tabs {
+  border-bottom: 1px solid #eee;
+  padding-left: 20px;
+}
+.nav-tabs ul {
+ padding: 0px;
+ border-bottom: 1px solid #eee;
+}
+.nav-tabs li {
+  float:left;
+  list-style:none;
+   margin-bottom: -1px;
+}
+.nav-tabs>li>a {
+    margin-right: -1px;
+    position: relative;
+    display: block;
+    padding: 10px 50px;
+    border: 1px solid red;
+    border-radius: 0;
+    background: #323232;
+    color:#fff;
+    text-decoration:none
+}
+.nav-tabs>li.active>a {
+   border: 1px solid blue;
+  background-color:#fff;
+  color:#555;
+  border-bottom-color: transparent;
+}
+.panel-body:before,
+.panel-body:after,
+.nav-tabs:before,
+.nav-tabs:after{
+    display: table;
+    content: " ";
+}
+.panel-body:after,
+.nav-tabs:after {
+  clear:both;
+}
+.panel-body .tab-pane { 
+ display:none;
+  padding:20px;
+ }
+.panel-body .panel-tab.active { 
+    display:block;
+}
+</style> 
+<script>
+</script>  
